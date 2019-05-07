@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddMessageActivity">
+
+    <TextView
+        android:id="@+id/msgLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Message Text"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/msgInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:singleLine="false"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tagLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Message Tag"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/selectTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/btnGeneral">
+
+        <RadioButton
+            android:id="@+id/btnGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General" />
+
+        <RadioButton
+            android:id="@+id/btnEncouragement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encouragement" />
+
+        <RadioButton
+            android:id="@+id/btnReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reminder" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add" />
+
+</LinearLayout>

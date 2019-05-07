@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PrefsActivity">
+
+    <TextView
+        android:id="@+id/tagsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Messages to show:"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/selectTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chkGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="General"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/chkEncouragement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Encouragement"
+            android:checked="false"/>
+        <CheckBox
+            android:id="@+id/chkReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reminder"
+            android:checked="false"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/colorLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select buddy color:" />
+
+    <RadioGroup
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btnColor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Blue" />
+
+        <RadioButton
+            android:id="@+id/btnColor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pink" />
+
+        <RadioButton
+            android:id="@+id/btnColor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Green" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/faceLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select buddy face:" />
+
+    <RadioGroup
+        android:id="@+id/faces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btnFace1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Face 1" />
+
+        <RadioButton
+            android:id="@+id/btnFace2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Face 2" />
+
+        <RadioButton
+            android:id="@+id/btnFace3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Face 3" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/previewLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Preview"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:id="@+id/frame_Char"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_weight="0">
+
+        <ImageView
+            android:id="@+id/img_color"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/bluecircle" />
+
+        <ImageView
+            android:id="@+id/img_face"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/face2" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+</LinearLayout>
