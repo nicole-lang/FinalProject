@@ -76,7 +76,9 @@ public class MainActivity extends AppCompatActivity {
                     messageList.add(newMsg);
                 }
 
-                enabledTags = intent.getStringArrayListExtra("enabledTags");
+                if(intent.getExtras().getStringArrayList("enabledTags") != null)
+                    enabledTags = intent.getStringArrayListExtra("enabledTags");
+
                 buddyFace = intent.getIntExtra("face", 2);
                 buddyColor = intent.getIntExtra("color", 1);
 
